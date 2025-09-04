@@ -40,6 +40,11 @@ allOperands.forEach((operandEl) => operandEl.addEventListener('click', appendTex
 
 equalOperator.addEventListener('click' , () => evaluate());
 
+const clearData = (e) => {
+    operand.innerText = '';
+    finalResult.innerText = '0';
+};
+
 clearOperandEl.addEventListener('click' , clearData);
 
 document.body.addEventListener('keydown' , appendTextFunc);
